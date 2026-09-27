@@ -1,0 +1,1 @@
+body{font-family:system-ui;background:#f4f6f8;margin:0}main{max-width:760px;margin:50px auto;background:white;padding:30px;border-radius:16px;box-shadow:0 8px 30px #0001}section{margin:25px 0}form{display:grid;gap:10px}input,button{padding:12px;border:1px solid #ccd;border-radius:8px}button{cursor:pointer;font-weight:700}

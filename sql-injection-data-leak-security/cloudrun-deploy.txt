@@ -1,0 +1,7 @@
+GCP deployment outline
+1. Create Cloud SQL PostgreSQL instance and database/user.
+2. Store DATABASE_URL, AES_KEY_BASE64 and CAPABILITY_SECRET in Secret Manager.
+3. Build container: gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT/REPO/sql-security
+4. Deploy to Cloud Run and attach Cloud SQL. Configure secrets as environment variables.
+5. Require HTTPS (Cloud Run provides HTTPS) and restrict database networking/IAM.
+6. Replace the demo admin code with real admin authentication before production use.
